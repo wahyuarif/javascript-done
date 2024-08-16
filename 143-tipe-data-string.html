@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>143 Tipe Data String</title>
+</head>
+<body>
+    <!-- 
+    Bisa menggunakan petik ('') atau petik dua ("")
+    Tapi HARUS KONSISTEN!
+    -->
+    <script>
+        document.writeln('wahyu arif kurniawan');
+        document.writeln('</br>');
+        document.writeln("wahyu arif kurniawan");
+
+        // menggabungkan string bisa dengan operator '+'
+        document.writeln('</br>')
+        document.writeln('Nama : '+'<b>'+'wahyu arif kurniawan'+'</b>');
+        document.writeln('</br>');
+
+
+        //escape Squence
+        /*
+            \t  : TAB
+            \n  : ENTER
+            \'  : PETIK SATU
+            \"  : PETIK DUA
+            \\  : GARIS MIRING KEBALIK
+        */
+
+        document.writeln('<textarea cols="60" rows="30">');
+            document.write('Nama \t wahyu arif kurniawan\n');
+            document.write('Alamat \t Banjarnegara\n');
+            document.write('Gender \t Pria \n');
+            document.write('URL \t http:\\\\wahyuarif.com \n'+'Hobi \t Ngoding \n');
+            document.write('Quots \t \"iam Love family\"')
+        document.writeln('</textarea>');
+    </script>
+</body>
+</html>
