@@ -7,12 +7,26 @@
 </head>
 <body>
     <script>
-        const val1 = "1";
+        let val1 = '1';
         const val2 = 2;
+        let number = Number(val1);
 
-        const sum = val1+val2;
+        const sum = number+val2;
         document.writeln(sum);
         document.writeln(typeof(sum));
+
+        let test1 = Number('1.1');
+        let test2 = Number('1');
+
+        document.writeln(typeof(test1));
+        document.writeln(typeof(test2));
+
+        let test3 = '1.1salah';
+        let now = parseFloat(test3);       
+        document.writeln(typeof(now));
+        document.writeln(now);
+        //parseInt dan parseFlot mentolelir kesalahan
+        //number tidak mentolelir kesalahan
     </script>
 </body>
 </html>

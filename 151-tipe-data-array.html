@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>151 Tipe Data Array</title>
+</head>
+<body>
+    <script>
+        let arrayKosong=[];
+        let arrayNama=['wahyu', 'arif', 'kurniawan'];
+
+        document.writeln(typeof(arrayNama));
+        arrayKosong.push('nama1', 'nama2');
+        document.writeln('</br>');
+        document.writeln(arrayKosong);
+        document.writeln('</br>');
+        document.writeln(arrayKosong.length);
+        console.table(arrayKosong);
+        document.writeln(arrayNama[0]);
+        arrayNama[0] = 'wahyyuuu';
+        console.table(arrayNama);
+        delete arrayNama[0];
+        console.table(arrayNama);
+        console.log(arrayNama.length);
+
+        /*
+            Operasi di array
+            array.push('value') : menambah data ke array, akan otomatis berurutan
+            array.length : mendapatkan panjang array
+            array[index] :mendapatkan data pada index tertentu
+            array[index] =value : mengubah data sesuai dengan index yang dimasukan
+            delete array[index] : menghapus data sesuai dengan index yang dimasukan
+
+
+        */
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>152 Tipe Data Object</title>
+</head>
+<body>
+    <script>
+        //index di object disebut dengan properties atau attribute
+        //jika di array index harus berupa number, sedangkan di object tidak.
+        //walaupun di array javascript dapat menggunakan index yang bukan number itu karena di konversi oleh javascriptnya dan perlu hati-hati karena nantinya ada fiture array yang tidak dapat dijalankan
+
+        //contoh object kosong
+        const objectKosong = {};
+        document.writeln(typeof(objectKosong));
+        
+        const person = {};
+        person['nama'] = 'wahyu arif kurniawan';
+        person['alamat'] = 'purwasaba depok';
+        person['gender'] = 'Pria';
+        person['age'] =  29;
+        
+        console.table(person);
+
+        delete person['age'];
+        console.table(person);
+
+        //cara simple membuat object
+        const orang = {
+            'nama lengkap' : 'wahyu arif kurniawan',
+            alamat : 'Banjarnegara',
+            age: 29
+        }
+
+        console.table(orang);
+        //jika lebih dari satu kata
+        console.log(orang['nama lengkap']);
+
+        //direkomendasikan mengaksesnya seperti dibawah
+        console.log(orang.age);
+    </script>
+    
+</body>
+</html>
